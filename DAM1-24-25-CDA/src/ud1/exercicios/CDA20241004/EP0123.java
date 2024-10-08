@@ -19,9 +19,13 @@ public class EP0123 {
         System.out.println("Dime la cantidad de masa que quieres transformar");
         double cantidad = scanner.nextDouble();
         System.out.println("Ahora dime en qué medida lo quieres");
-        double medida = scanner.nextDouble();
+        String medida = scanner.next();
          
-        
+            if (condition) {
+                
+            } else {
+                
+            }
 
 
         
