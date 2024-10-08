@@ -21,11 +21,8 @@ public class EP0123 {
         System.out.println("Ahora dime en qué medida lo quieres");
         String medida = scanner.next();
          
-            if (condition) {
-                
-            } else {
-                
-            }
+            
+            
 
 
         
