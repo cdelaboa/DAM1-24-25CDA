@@ -20,7 +20,7 @@ public class EP0123 {
         double cantidad = scanner.nextDouble();
         System.out.println("Ahora dime en qué medida lo quieres");
         double medida = scanner.nextDouble();
-         
+                          
             
             
 

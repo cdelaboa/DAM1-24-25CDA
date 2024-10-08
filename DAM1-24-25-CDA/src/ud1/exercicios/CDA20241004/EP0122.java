@@ -7,7 +7,7 @@ public class EP0122 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Dime una temperatura dada en grados Farenheit ");
-        double farenheit = scanner.nextInt();
+        double farenheit = scanner.nextDouble();
 
         //Fórmula
        
