@@ -4,24 +4,28 @@ import java.util.Scanner;
 
 public class EP0129 {
     public static void main(String[] args) {
-        // Escribe un programa que tome como entrada un número entero e indique qué
-        // cantidad hay que sumarle para que el resultado sea múltiplo de 7. Un ejemplo:
-        // A 2 hay que sumarle 5 para que el resultado (2+5=7) sea múltiplo de 7.
-        // A 13 hay que sumarle 1 para que el resultado (13+1=14) sea múltiplo de 7.
 
-        Scanner sc = new Scanner(System.in);
+        {
 
-        byte num;
+            // Crear un objeto Scanner para la entrada de datos
+            Scanner scanner = new Scanner(System.in);
 
-        System.out.println(" Dime un número entero cualquiera ");
-        num = sc.nextByte();
+            // Solicitar al usuario que ingrese un número entero
+            System.out.print("Introduce un número entero: ");
+            int numero = scanner.nextInt();
 
-        double multiplo = (num % 7) 
-         (num / 7);
+            // Calcular cuánto hay que sumarle para que sea múltiplo de 7 usando el operador
+            // ternario
+            int resto = numero % 7;
+            int cantidadASumar = (resto == 0) ? 0 : 7 - resto;
 
-        System.out.println(" Por lo cual el múltiplo de 7 más próximo a tu número es " + multiplo);
+            // Mostrar el resultado
+            System.out.println(
+                    "A " + numero + " hay que sumarle " + cantidadASumar + " para que el resultado sea múltiplo de 7.");
 
-
-        sc.close();
+            // Cerrar el Scanner
+            scanner.close();
+        }
     }
+
 }
