@@ -1,68 +1,36 @@
 package ud1.ejercicios.parejas;
+
 import java.util.Scanner;
+
 public class HorasClaseAsistencia {
-    
-    public static void main(String[] args) {
+   
     //Driver: Carlos de la Torre Aboal
     //Copilot: David Besada Ramilo
-    
-    Scanner scanner = new Scanner(System.in);
-    final String prog = "Programación";
-    final double tiempoProg = 240;
+    public static void main(String[] args) {
+        
+        final int MINUTOS = 240 * 60;
+        final double apercibimiento = 0.06;
+        final double perdidaEv = 0.10;
+        final double sesiones = MINUTOS / 50;
 
+        double ses6Perc = sesiones * apercibimiento;
+        double ses10Perc = sesiones * perdidaEv;
 
-    double min = tiempoProg * 60;
-    double sesiones = min / 50;
-    
-    System.out.println(" A lo largo del año habrá un total de  " + sesiones + " de sesiones " + prog);
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Introduzca el número de faltas del alumno: ");
+        int faltas = sc.nextInt();
+        sc.close();
 
-    //2. número de faltas sin justificar que implican un apercibimiento (>6%)
+        System.out.println("Número de sesiones de 50': " + sesiones);
+        System.out.println("Número de faltas sin justificar que implican un apercebimiento: " + ses6Perc);
+        System.out.println(
+                "Número de faltas sin justificar que implican una pérdida de la evaluación continua: " + ses10Perc);
 
-     boolean  faltasApercibimiento = sesiones * 0.6;
+        String consecuencias = (faltas < ses6Perc) ? "Ningún problema"
+                : (faltas < ses10Perc) ? "Apercibimiento" : "Pérdida de evaluación continua";
 
-
-
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    scanner.close();;
-
+        System.out.println(consecuencias);
+        sc.close();
     }
-}
+       }
