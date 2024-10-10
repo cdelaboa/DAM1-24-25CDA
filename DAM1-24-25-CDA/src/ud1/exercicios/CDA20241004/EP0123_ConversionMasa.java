@@ -14,6 +14,7 @@ El programa deberá manejar las conversiones automáticamente y mostrar el resul
 
 public class EP0123_ConversionMasa {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         final double GRAMOS_LIBRA = 453.592;
         final double KILOS_LIBRAS = 1000 / GRAMOS_LIBRA;
         final double LIBRAS_KILOS = GRAMOS_LIBRA / 1000;
@@ -40,7 +41,7 @@ public class EP0123_ConversionMasa {
 
         System.out.printf("La masa en la medida de destino es %.3f %s %n", masaDestino, unidadMedidaDestino);
 
-    }
+    
 
             
        
