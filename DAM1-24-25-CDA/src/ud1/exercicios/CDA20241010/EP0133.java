@@ -17,11 +17,11 @@ public class EP0133 {
 
         Scanner sc = new Scanner(System.in);
 
-        final int BYTES_KB = 1024;
-        final int KB_MB = 1024;
+        final double BYTES_KB = 1024;
+        final double KB_MB = 1024;
       
 
-        int unidadOrigen, unidadDestino;
+        double unidadOrigen, unidadDestino;
 
         System.out.println(" Introduce la unidad de origen ");
         unidadOrigen = sc.nextInt();
@@ -35,7 +35,7 @@ public class EP0133 {
 
         String unidadMedidaDestino = unidadMedida == 'K' || unidadMedida == 'k' ? "megabyte" : "kilobyte" ;
 
-        System.out.printf("La cantidad en la medida de destino es %.3f %s %n", unidadDestino, unidadMedidaDestino);
+        System.out.printf("La cantidad en la medida de destino es %.0f %s %n", unidadDestino, unidadMedidaDestino);
 
         sc.close();
     }
