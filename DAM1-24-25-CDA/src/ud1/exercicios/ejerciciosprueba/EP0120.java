@@ -21,7 +21,7 @@ public static void main(String[] args) {
 
     double importeFinal = (adultos * entradaAdulto) + (niños * entradaInfantil);
 
-    double descuento5 = (importeFinal <= 100) ? importeFinal : (importeFinal -(importeFinal * 0.05));
+    double descuento5 = (importeFinal <= 100) ? importeFinal : (importeFinal - (importeFinal * 0.05));
 
     System.out.println(" El precio final para entrar es de.." + descuento5 + "euros");
 }
