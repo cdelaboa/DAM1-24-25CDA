@@ -21,16 +21,19 @@ public static void main(String[] args) {
     System.out.print("Introduce la unidad de medida de origen: (1 = Kilos, 2 = Libras): ");
     unidadMedida = sc.nextByte();*/
 
-    char unidadMedida;
+    char unidadMedida, unidadMedidaDestino;
     System.out.print("Introduce la unidad de medida de origen: (H = hectáreas, M = metros cuadrados): ");
     unidadMedida = sc.nextLine().charAt(0);
+    
+    System.out.print(" Introduce la unidad de destino: (H= PIES CUADRADOS, M2= METROS CUADRADOS ");
+    unidadMedidaDestino = sc.nextLine().charAt(0);
     sc.close();
 
     areaDestino = unidadMedida == 'H' ? areaOrigen * M2_HR : areaOrigen * PIESCUADRADOS_M2;
 
-    String unidadMedidaDestino = unidadMedida == 'H' ? "pies cuadrados " : "metros cuadrados";
+    String unidadDestino = unidadMedida == 'H' ? "pies cuadrados " : "metros cuadrados";
 
-    System.out.printf("La masa en la medida de destino es %.3f %s %n", areaDestino, unidadMedidaDestino);
+    System.out.printf("La masa en la medida de destino es %.2f %s %n", areaDestino, unidadMedidaDestino, unidadDestino);
 
 
 
