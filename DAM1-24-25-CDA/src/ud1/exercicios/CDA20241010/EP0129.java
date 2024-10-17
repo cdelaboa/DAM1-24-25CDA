@@ -11,7 +11,7 @@ public class EP0129 {
             // Solicitar al usuario que ingrese un número entero
             System.out.print("Introduce un número entero: ");
             int numero = scanner.nextInt();
-
+                scanner.close();
             // Calcular cuánto hay que sumarle para que sea múltiplo de 7 usando el operador
             // ternario
             int resto = numero % 7;
