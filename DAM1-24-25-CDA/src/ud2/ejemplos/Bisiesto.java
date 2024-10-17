@@ -21,13 +21,15 @@ public class Bisiesto {
         sc.close();
 
         System.out.println(" El año que me has proporcionado es ");
-        if (año % 4 == 0) {
+        if (año % 400 == 0) {
             System.out.println("Bisiesto");
         } else if (año % 100 ==0) {
             System.out.println("No bisiesto");
-        } else if (año % 100 ==0 && año % 400 ==0) {
-            System.out.println(" No Bisiesto");
-        } 
+        } else if (año % 4 ==0) {
+            System.out.println("Bisiesto");
+        } else {
+            System.out.println(" No bisiesto");
+        }
         
     }
 }
