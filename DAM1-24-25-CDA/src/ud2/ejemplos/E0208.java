@@ -25,13 +25,23 @@ public class E0208 {
          c =sc.nextInt();
          sc.close();
       
+         double raiz = (Math.sqrt(Math.pow(b, 2) - 4 * a));
          
-          double x1 = -b + (Math.sqrt(Math.pow(b, 2) - 4 * a )) / 2 * a;
-          double x2 = -b - (Math.sqrt(Math.pow(b, 2) - 4 * a * c)) /  2 * a;
+
+          if (raiz ==0) {
+            double solucion = -b / 2 * a;
+            System.out.printf("La solución de la ecuación es: %.2f %n " , solucion);
+          } else if (raiz > 0) {
+            double solucion1 =  -b + (Math.sqrt(Math.pow(b, 2) - 4 * a )) / 2 * a;
+            double solucion2 = -b - (Math.sqrt(Math.pow(b, 2) - 4 * a * c)) /  2 * a;
+            System.out.printf("La solución de la ecuación es: %.2f y %.2f" , solucion1 , solucion2);
+          } else {
+            System.out.println("No existe solución");
+          }
           
         
        
-        System.out.println(" El resultado de la ecuación de segundo grado es:... " + x1 + "," + x2);
+     
         
 
         }
