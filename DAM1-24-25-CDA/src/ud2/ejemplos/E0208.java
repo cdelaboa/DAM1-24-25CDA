@@ -23,5 +23,21 @@ public class E0208 {
          a =sc.nextInt();
          b =sc.nextInt();
          c =sc.nextInt();
+         sc.close();
+      
+         
+          double x1 = -b + (Math.sqrt(Math.pow(b, 2) - 4 * a )) / 2 * a;
+          double x2 = -b - (Math.sqrt(Math.pow(b, 2) - 4 * a * c)) /  2 * a;
+          
+        
+       
+        System.out.println(" El resultado de la ecuación de segundo grado es:... " + x1 + "," + x2);
+        
+
         }
-}
+
+      
+
+
+        }
+
