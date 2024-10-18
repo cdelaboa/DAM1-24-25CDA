@@ -14,28 +14,22 @@ public class Bisiesto {
          * divisible por 100, en cuyo
          * caso también ha de ser divisible entre 400.”
          */
-        
-        int año;
+
+        int anho;
         System.out.println("Dime un año");
-        año = sc.nextInt();
+        anho = sc.nextInt();
         sc.close();
 
-        System.out.println(" El año que me has proporcionado es ");
-        if (año % 400 == 0) {
+        System.out.println("El año que me has proporcionado es ");
+        if (anho % 400 == 0) {
             System.out.println("Bisiesto");
-        } else if (año % 100 ==0) {
+        } else if (anho % 100 == 0) {
             System.out.println("No bisiesto");
-        } else if (año % 4 ==0) {
+        } else if (anho % 4 == 0) {
             System.out.println("Bisiesto");
         } else {
             System.out.println(" No bisiesto");
         }
-        
+
     }
 }
-        
-        
-
-    
-
-
