@@ -50,7 +50,7 @@ public static void main(String[] args) {
     }
 
     // Mostrar los números ordenados de mayor a menor
-    System.out.println("Los números ordenados de mayor a menor son: " + mayor + ", " + medio + ", " + menor);
+    System.out.println("Los números ordenados de mayor a menor son: " + mayor + "> " + medio + "> " + menor);
 }
 }
 
