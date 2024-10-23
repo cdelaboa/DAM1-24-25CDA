@@ -19,17 +19,17 @@ public class E0213 {
         sec = sec + 1;
 
         if (sec == 60) {
-            sec = 00;
+            sec = 0;
             min = min + 1;
         }
         if (min == 60) {
-            min = 00;
+            min = 0;
             hour = hour + 1;
         }
         if (hour == 24) {
-            sec = 00;
-            min = 00;
-            hour = 00;
+            sec = 0;
+            min = 0;
+            hour = 0;
         }
 
         System.out.printf("Son las %02d:%02d:%02d", hour, min, sec);
