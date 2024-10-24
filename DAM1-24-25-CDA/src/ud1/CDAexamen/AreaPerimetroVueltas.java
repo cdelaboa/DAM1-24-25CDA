@@ -7,9 +7,9 @@ public static void main(String[] args) {
     double ancho;
     
     Scanner sc =new Scanner(System.in);
-    System.out.println(" Dime el largo de la figura (en metros) %.2f");
+    System.out.println(" Dime el largo de la figura (en metros)");
     largo =sc.nextDouble();
-    System.out.println(" Ahora dime el ancho de la figura (en metros) %.2f ");
+    System.out.println(" Ahora dime el ancho de la figura (en metros)");
     ancho =sc.nextDouble();
     
     double radio = ancho / 2;
@@ -23,10 +23,10 @@ public static void main(String[] args) {
     double areaRectangulo = largo * ancho;
     areaTotal = areaCirculo + areaRectangulo;
 
-    System.out.println(" Por lo cual el área de la figura es de %.2f: " + areaTotal + " y el perímetro es de %.2f: " + perimetroTotal);
+    System.out.println(" Por lo cual el área de la figura es de: " + areaTotal + " y el perímetro es de %.2f: " + perimetroTotal);
 
-    double numVueltas = perimetroTotal / 21097;
-    double metrosSobrantes = perimetroTotal % 21097;
+    double numVueltas =21097 / perimetroTotal  ;
+    double metrosSobrantes = 21097 % perimetroTotal ;
 
     System.out.printf(" Tendrás que dar %.2f %n vueltas", numVueltas);
     sc.nextLine();
