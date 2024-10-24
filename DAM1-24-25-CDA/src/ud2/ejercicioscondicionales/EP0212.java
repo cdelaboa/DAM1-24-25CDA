@@ -9,6 +9,7 @@ public class EP0212 {
         System.out.println("Con este programa acertaré la letra de tu DNI solamente diciéndome el tu número...");
         System.out.println("Entonces dime cual es tu número de DNI");
         int numDNI = sc.nextInt();
+        sc.close();
 
         int letra = numDNI % 23;
 
