@@ -23,6 +23,7 @@ public static void main(String[] args) {
         } else {
             System.out.println("El número " + num + " no es capicúa.");
         }
+    }
 
     // Método para comprobar si un número es capicúa
     public static boolean esCapicua(int numero) {
