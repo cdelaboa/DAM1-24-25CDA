@@ -8,7 +8,7 @@ public class EP0218 {
          Random random = new Random();
          int numeroAleatorio1 = random.nextInt(100);
          int numeroAleatorio2 = random.nextInt(100);
-         int operacionAleatoria = random.nextInt(+ & -& / &*);
+         int operacionAleatoria = random.nextInt(4);
          double resultado = 0;
         String operador = "";
          // Seleccionar la operación aleatoriamente
@@ -44,7 +44,7 @@ public class EP0218 {
          int respuesta;
          System.out.println("Aquí tienes tu primer número " + numeroAleatorio1);
          System.out.println("Y aquí el segundo " + numeroAleatorio2);
-         System.out.println("Ahora aveer cuánto da esta operación? " + operacionAleatoria);
+         System.out.println("Ahora aveer cuánto da esta operación? (1= + | 2= - | 3 = * | 4 = /) " + operacionAleatoria);
          respuesta = sc.nextInt();
          sc.close();
  

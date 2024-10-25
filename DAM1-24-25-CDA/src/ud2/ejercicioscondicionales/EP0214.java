@@ -1,31 +1,8 @@
 package ud2.ejercicioscondicionales;
 
-<<<<<<< HEAD
 import java.util.*;
+
 // CDA
-public class EP0214 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        /*  Escribe un programa que solicite al usuario un número comprendido entre 1 y 99.
-            El programa debe mostrario con letras, por ejemplo, para 56, se verá: “cincuenta y seis”.
-        */
-
-        //ENTRADA
-        int x;
-        System.out.println("Proporciona un número comprendido entre 1 y 99");
-        x = sc.nextInt();
-        sc.close();
-
-        //PROCESO
-
-        System.out.println("El" + x + "en letras se ve así");
-
-    }
-}
-=======
-import java.util.Scanner;
-
 public class EP0214 {
 
     public static String convertir(int numero) {
@@ -100,8 +77,8 @@ public class EP0214 {
         }
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    
+  Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce un número entero entre 0 y 99: ");
         int numero = scanner.nextInt();
         scanner.close();
@@ -109,6 +86,4 @@ public class EP0214 {
         String numeroEnLetras = convertir(numero);
         System.out.println("El número en letras es: " + numeroEnLetras);
     }
-}
 
->>>>>>> 9ca6647f93851398b8c1bd3960af5323a870f4c9
