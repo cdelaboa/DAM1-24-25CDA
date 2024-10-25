@@ -13,7 +13,7 @@ public class E0213 {
         sec = sc.nextInt();
         sc.close();
 
-        System.out.println("Son las "+ hour + ":" + min + ":" + sec);
+        System.out.println("Son las " + hour + ":" + min + ":" + sec);
 
         System.out.println("Vamos a añadirle un segundo");
         sec = sec + 1;
@@ -33,25 +33,5 @@ public class E0213 {
         }
 
         System.out.printf("Son las %02d:%02d:%02d", hour, min, sec);
-
-
-        /*
-         * pasar todo a segundos
-         * final double HORA_SEGUNDO = hora * 3600;
-         * final double MINUTO_SEGUNDO = minuto * 60;
-         * 
-         * double horaPlusOneSecond = HORA_SEGUNDO + MINUTO_SEGUNDO + segundo ++;
-         * 
-         * System.out.println(" La hora +  1 segundo  " + horaPlusOneSecond);
-         * 
-         * double hour, min, sec;
-         * hour = horaPlusOneSecond / 3600;
-         * min = horaPlusOneSecond / 60;
-         * sec = min % 60;
-         * 
-         * System.out.println(" La hora cambiada es ");
-         * System.out.printf("%.0f:%.0f:%.0f", hour, min, sec);
-         * 
-         */
     }
 }
