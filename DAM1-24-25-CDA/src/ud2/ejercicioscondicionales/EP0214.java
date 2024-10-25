@@ -6,84 +6,156 @@ import java.util.*;
 public class EP0214 {
 
     public static String convertir(int numero) {
-        if (numero == 0) {
-            return "cero";
-        } else if (numero == 1) {
-            return "uno";
-        } else if (numero == 2) {
-            return "dos";
-        } else if (numero == 3) {
-            return "tres";
-        } else if (numero == 4) {
-            return "cuatro";
-        } else if (numero == 5) {
-            return "cinco";
-        } else if (numero == 6) {
-            return "seis";
-        } else if (numero == 7) {
-            return "siete";
-        } else if (numero == 8) {
-            return "ocho";
-        } else if (numero == 9) {
-            return "nueve";
-        } else if (numero == 10) {
-            return "diez";
-        } else if (numero == 11) {
-            return "once";
-        } else if (numero == 12) {
-            return "doce";
-        } else if (numero == 13) {
-            return "trece";
-        } else if (numero == 14) {
-            return "catorce";
-        } else if (numero == 15) {
-            return "quince";
-        } else if (numero < 20) {
-            return "dieci" + convertir(numero - 10);
-        } else if (numero == 20) {
-            return "veinte";
-        } else if (numero < 30) {
-            return "veinti" + convertir(numero - 20);
-        } else if (numero == 30) {
-            return "treinta";
-        } else if (numero < 40) {
-            return "treinta y " + convertir(numero - 30);
-        } else if (numero == 40) {
-            return "cuarenta";
-        } else if (numero < 50) {
-            return "cuarenta y " + convertir(numero - 40);
-        } else if (numero == 50) {
-            return "cincuenta";
-        } else if (numero < 60) {
-            return "cincuenta y " + convertir(numero - 50);
-        } else if (numero == 60) {
-            return "sesenta";
-        } else if (numero < 70) {
-            return "sesenta y " + convertir(numero - 60);
-        } else if (numero == 70) {
-            return "setenta";
-        } else if (numero < 80) {
-            return "setenta y " + convertir(numero - 70);
-        } else if (numero == 80) {
-            return "ochenta";
-        } else if (numero < 90) {
-            return "ochenta y " + convertir(numero - 80);
-        } else if (numero == 90) {
-            return "noventa";
-        } else if (numero < 100) {
-            return "noventa y " + convertir(numero - 90);
-        } else {
-            return "Número fuera de rango";
-        }
-    }
-
-    
-  Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce un número entero entre 0 y 99: ");
-        int numero = scanner.nextInt();
-        scanner.close();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce un número entero entre 0 y 99: ");
+        numero = scanner.nextInt();
 
         String numeroEnLetras = convertir(numero);
         System.out.println("El número en letras es: " + numeroEnLetras);
+
+        if (numero == 0) {
+            scanner.close();
+
+            return "cero";
+        } else if (numero == 1) {
+            scanner.close();
+
+            return "uno";
+        } else if (numero == 2) {
+            scanner.close();
+
+            return "dos";
+        } else if (numero == 3) {
+            scanner.close();
+
+            return "tres";
+        } else if (numero == 4) {
+            scanner.close();
+
+            return "cuatro";
+        } else if (numero == 5) {
+            scanner.close();
+
+            return "cinco";
+        } else if (numero == 6) {
+            scanner.close();
+
+            return "seis";
+        } else if (numero == 7) {
+            scanner.close();
+
+            return "siete";
+        } else if (numero == 8) {
+            scanner.close();
+
+            return "ocho";
+        } else if (numero == 9) {
+            scanner.close();
+
+            return "nueve";
+        } else if (numero == 10) {
+            scanner.close();
+
+            return "diez";
+        } else if (numero == 11) {
+            scanner.close();
+
+            return "once";
+        } else if (numero == 12) {
+            scanner.close();
+
+            return "doce";
+        } else if (numero == 13) {
+            scanner.close();
+
+            return "trece";
+        } else if (numero == 14) {
+            scanner.close();
+
+            return "catorce";
+        } else if (numero == 15) {
+            scanner.close();
+
+            return "quince";
+        } else if (numero < 20) {
+            scanner.close();
+
+            return "dieci" + convertir(numero - 10);
+        } else if (numero == 20) {
+            scanner.close();
+
+            return "veinte";
+        } else if (numero < 30) {
+            scanner.close();
+
+            return "veinti" + convertir(numero - 20);
+        } else if (numero == 30) {
+            scanner.close();
+
+            return "treinta";
+        } else if (numero < 40) {
+            scanner.close();
+
+            return "treinta y " + convertir(numero - 30);
+        } else if (numero == 40) {
+            scanner.close();
+
+            return "cuarenta";
+        } else if (numero < 50) {
+            scanner.close();
+
+            return "cuarenta y " + convertir(numero - 40);
+        } else if (numero == 50) {
+            scanner.close();
+
+            return "cincuenta";
+        } else if (numero < 60) {
+            scanner.close();
+
+            return "cincuenta y " + convertir(numero - 50);
+        } else if (numero == 60) {
+            scanner.close();
+
+            return "sesenta";
+        } else if (numero < 70) {
+            scanner.close();
+
+            return "sesenta y " + convertir(numero - 60);
+        } else if (numero == 70) {
+            scanner.close();
+
+            return "setenta";
+        } else if (numero < 80) {
+            scanner.close();
+
+            return "setenta y " + convertir(numero - 70);
+        } else if (numero == 80) {
+            scanner.close();
+
+            return "ochenta";
+        } else if (numero < 90) {
+            scanner.close();
+
+            return "ochenta y " + convertir(numero - 80);
+        } else if (numero == 90) {
+            scanner.close();
+
+            return "noventa";
+        } else if (numero < 100) {
+            scanner.close();
+            scanner.close();
+            return "ochenta y " + convertir(numero - 80);
+        } else {
+            scanner.close();
+
+            return "Número fuera de rango";
+        }
+
+    
+
+    }
+
+    
+ 
     }
 
