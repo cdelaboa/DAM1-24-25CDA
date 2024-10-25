@@ -7,14 +7,14 @@ public class E0214 {
         /*Crear una aplicación que solicite al usuario una fecha (día, mes, año)
          y muestre la fecha correspondiente al día siguiente.  */
 
-         int dia, mes, año;
+         int dia, mes, anho;
          System.out.println(" Dime la fecha del año que quieras ( especificando día, mes y año)");
          dia = sc.nextInt();
          mes = sc.nextInt();
-         año = sc.nextInt();
+         anho = sc.nextInt();
          sc.close();
 
-         System.out.println("Es el "+ dia + "de" + mes + "del" + año);
+         System.out.println("Es el "+ dia + "de" + mes + "del" + anho);
 
          System.out.println("Vamos a añadirle un día");
          dia = dia + 1;
@@ -24,7 +24,7 @@ public class E0214 {
             mes = mes + 1;
          }
         
-         System.out.printf("Es el %dde%ddel%d", dia, mes, año);
+         System.out.printf("Es el %dde%ddel%d", dia, mes, anho);
 
     }
 }
