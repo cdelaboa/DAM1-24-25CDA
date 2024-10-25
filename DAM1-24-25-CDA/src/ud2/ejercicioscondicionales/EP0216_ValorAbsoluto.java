@@ -1,6 +1,6 @@
 package ud2.ejercicioscondicionales;
 import java.util.*;
-public class EP0216 {
+public class EP0216_ValorAbsoluto {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,6 +10,7 @@ public class EP0216 {
         int x;
         System.out.println("Dime un número");
         x = sc.nextInt();
+        sc.close();
 
         String respuesta;
 

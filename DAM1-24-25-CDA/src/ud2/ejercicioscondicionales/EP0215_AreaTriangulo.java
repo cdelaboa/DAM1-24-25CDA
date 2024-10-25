@@ -1,6 +1,6 @@
 package ud2.ejercicioscondicionales;
 import java.util.*;
-public class EP0215 {
+public class EP0215_AreaTriangulo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int largo, ancho;

@@ -2,7 +2,7 @@ package ud2.ejercicioscondicionales;
 
 import java.util.*;
 
-public class EP0217 {
+public class EP0217_Random {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -28,7 +28,7 @@ public class EP0217 {
         if (respuesta == suma) {
             System.out.println("Es correcto");
         } else {
-            System.out.println(" NO es correcto");
+            System.out.println("No es correcto");
         }
 
     }

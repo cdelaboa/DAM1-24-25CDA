@@ -2,7 +2,7 @@ package ud2.ejercicioscondicionales;
 
 import java.util.*;
 
-public class EP0212 {
+public class EP0212_DNI {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
