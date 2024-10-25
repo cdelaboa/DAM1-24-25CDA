@@ -2,17 +2,25 @@ package ud2.ejercicioscondicionales;
 
 import java.util.*;
 
-// CDA
 public class EP0214 {
 
-    public static String convertir(int numero) {
+   public static void main(String[] args) {
+    
         Scanner scanner = new Scanner(System.in);
+        int numero;
+        
         System.out.println("Introduce un número entero entre 0 y 99: ");
         numero = scanner.nextInt();
 
         String numeroEnLetras = convertir(numero);
         System.out.println("El número en letras es: " + numeroEnLetras);
 
+        scanner.close();
+    }
+
+        public static String convertir(int numero) {
+        Scanner scanner = new Scanner(System.in);
+            
         if (numero == 0) {
             scanner.close();
 
@@ -150,12 +158,6 @@ public class EP0214 {
 
             return "Número fuera de rango";
         }
-
-    
-
     }
-
-    
- 
-    }
+}
 
