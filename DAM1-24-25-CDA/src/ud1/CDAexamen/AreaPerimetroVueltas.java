@@ -25,7 +25,7 @@ public static void main(String[] args) {
 
     System.out.println(" Por lo cual el área de la figura es de: " + areaTotal + " y el perímetro es de %.2f: " + perimetroTotal);
 
-    double numVueltas =21097 / perimetroTotal  ;
+    double numVueltas =21097 / perimetroTotal;
     double metrosSobrantes = 21097 % perimetroTotal ;
 
     System.out.printf(" Tendrás que dar %.2f %n vueltas", numVueltas);

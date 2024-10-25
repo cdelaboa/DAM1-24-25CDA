@@ -26,9 +26,6 @@ public class CompraConjunta {
         double dineroQueFalta = precio - dineroRecaudado;
 
         System.out.printf("El dinero que falta es: ", compra, dineroQueFalta, dineroSobrante);
-      
-
         sc.close();
-
     }
 }
