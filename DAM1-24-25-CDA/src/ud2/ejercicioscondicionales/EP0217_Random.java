@@ -29,6 +29,7 @@ public class EP0217_Random {
             System.out.println("Es correcto");
         } else {
             System.out.println("No es correcto");
+            System.out.println("Prueba otra vez");
         }
 
     }
