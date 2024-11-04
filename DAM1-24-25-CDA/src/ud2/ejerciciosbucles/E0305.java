@@ -7,18 +7,32 @@ public class E0305 {
         Scanner sc = new Scanner(System.in);
 
         Random random = new Random();
-        int numeroAleatorio1 = random.nextInt(100);
-        int numeroAleatorio2 = random.nextInt(100);
-        int suma = numeroAleatorio1 + numeroAleatorio2;
+        for (int i = 0; i < 10; i++) {
+            int num = random.nextInt(100);  // Generar un número aleatorio entre 0 y 99
+    
+        int suma = num + num;
         int acierto = 0;
         int fallo = 0;
-
         int respuesta;
-        System.out.println("Aquí tienes tu primer número " + numeroAleatorio1);
-        System.out.println("Y aquí el segundo " + numeroAleatorio2);
+
+        System.out.println("Aquí tienes tu primer número " + num);
+        System.out.println("Y aquí el segundo " + num);
         System.out.println("Ahora cúanto suman estos dos números? ");
         respuesta = sc.nextInt();
-        sc.close();
+
+        do{
+        System.out.println("Ahora súmale este" + num);
+        respuesta = sc.nextInt();
+            System.out.println("Has acertado, continúas...");
+            acierto++;      
+        } while (respuesta == suma);
+     
+    
+    System.out.println("Has fallado, tu número de aciertos es " + acierto);
+
+  }
+}
+}
         /* 
         if (respuesta == suma) {
             System.out.println("Es correcto");
@@ -27,7 +41,7 @@ public class E0305 {
             System.out.println("Prueba otra vez");
         }
             */
-        while (respuesta == suma) {
+        /*while (respuesta == suma) {
             System.out.println("Has acertado");
             acierto = acierto + 1;
             System.out.println("Aquí tienes tu primer número " + numeroAleatorio1);
@@ -45,15 +59,8 @@ public class E0305 {
         if (fallo == 5) {
                     System.out.println("Se acabó el juego para ti");
                     return;
-
-                }
-                
-            }
-        }
-        sc.close();
-        
-    }
-}
+ */
+             
     
 
 
