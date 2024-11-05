@@ -12,15 +12,16 @@ public class E0305 {
     
         int suma = num + num;
         int acierto = 0;
+        int fallo = 0;
         int respuesta;
 
         System.out.println("Aquí tienes tu primer número " + num);
         System.out.println("Y aquí el segundo " + num);
         System.out.println("Ahora cúanto suman estos dos números? ");
         respuesta = sc.nextInt();
-            sc.close();
+
         do{
-        System.out.println("Ahora súmale este" + num);
+        System.out.println("Ahora súmale a este" + num);
         respuesta = sc.nextInt();
             System.out.println("Has acertado, continúas...");
             acierto++;      
@@ -32,6 +33,34 @@ public class E0305 {
   }
 }
 }
-      
+        /* 
+        if (respuesta == suma) {
+            System.out.println("Es correcto");
+        } else {
+            System.out.println("No es correcto");
+            System.out.println("Prueba otra vez");
+        }
+            */
+        /*while (respuesta == suma) {
+            System.out.println("Has acertado");
+            acierto = acierto + 1;
+            System.out.println("Aquí tienes tu primer número " + numeroAleatorio1);
+            System.out.println("Y aquí el segundo " + numeroAleatorio2);
+            System.out.println("Ahora cúanto suman estos dos números? ");
+            respuesta = sc.nextInt();
+                   
+            if (respuesta != suma) {
+                System.out.println("Has fallado, prueba otra vez");
+                fallo = fallo + 1;
+                System.out.println("Aquí tienes tu primer número " + numeroAleatorio1);
+                System.out.println("Y aquí el segundo " + numeroAleatorio2);
+                System.out.println("Ahora cúanto suman estos dos números? ");
+                respuesta = sc.nextInt();
+        if (fallo == 5) {
+                    System.out.println("Se acabó el juego para ti");
+                    return;
+ */
+             
+    
 
 
