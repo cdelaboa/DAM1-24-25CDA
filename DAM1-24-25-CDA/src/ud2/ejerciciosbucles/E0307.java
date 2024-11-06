@@ -13,6 +13,7 @@ public class E0307 {
     
    
         }  
+        sc.close();
     }}
     }
     
