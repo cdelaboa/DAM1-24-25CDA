@@ -20,8 +20,9 @@ public class E0308 {
         sc.close();
         
 
-        int suma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10;
+        double suma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10;
         double media = suma / 10;
+        System.out.println("El resultado de la suma es " + suma);
         System.out.println("la media de estos 10 números es " + media);
 
 
