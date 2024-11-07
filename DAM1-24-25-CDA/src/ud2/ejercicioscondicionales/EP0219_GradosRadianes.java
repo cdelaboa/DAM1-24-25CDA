@@ -7,12 +7,12 @@ public class EP0219_GradosRadianes {
         Scanner sc = new Scanner(System.in);
 
         double degrees;
-        double rango;
+        double rango = 0;
         System.out.println("Cuántos grados tiene tu ángulo?...");
         degrees = sc.nextDouble();
-
+        sc.close();
         if (degrees < 0) {
-            System.out.println("Tenemos que transformarlo a dicho rango ");
+            System.out.println("Tenemos que transformarlo a dicho rango " + rango);
             rango = 360 - degrees;
         }
     }
