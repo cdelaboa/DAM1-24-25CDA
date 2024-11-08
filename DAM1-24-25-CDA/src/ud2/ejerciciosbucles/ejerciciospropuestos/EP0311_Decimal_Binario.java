@@ -10,7 +10,17 @@ public static void main(String[] args) {
 
 
     System.out.println("Dime un número: ");
-    int num = sc.nextInt();
-    
-}
+    int n = sc.nextInt();
+    sc.close();
+    String binario = "";
+
+    while (n / 2 > 0) {
+        binario = (n % 2) + binario;
+        n = n / 2;
+    }
+    binario = n + binario;
+
+    System.out.println(binario);
+
+ }
 }
