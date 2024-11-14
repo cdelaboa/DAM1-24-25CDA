@@ -22,13 +22,15 @@ public class E0411_MCD {
     }
 
     public static void main(String[] args) {
-        int a, b;
+       /*  int a, b;
         Scanner sc = new Scanner(System.in);
         System.out.println("Dime dos números ");
         a = sc.nextInt();
         b = sc.nextInt();
         sc.close();
         System.out.println("Ahora comprabaremos cuál es su máximo común divisor ");
-        System.out.println(mcd(a, b));
+        System.out.println(mcd(a, b)); 
+        */
+        System.out.println(mcd(30,5));
     }
 }

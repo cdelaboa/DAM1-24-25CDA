@@ -152,7 +152,7 @@ public class EP0214_ConvertirNumLetras {
         } else if (numero < 100) {
             scanner.close();
             scanner.close();
-            return "ochenta y " + convertir(numero - 80);
+            return "noventa y " + convertir(numero - 90);
         } else {
             scanner.close();
 
