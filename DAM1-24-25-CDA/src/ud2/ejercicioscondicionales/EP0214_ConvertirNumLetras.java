@@ -19,7 +19,9 @@ public class EP0214_ConvertirNumLetras {
     }
 
         public static String convertir(int numero) {
+            
         Scanner scanner = new Scanner(System.in);
+        
             
         if (numero == 0) {
             scanner.close();
@@ -160,4 +162,3 @@ public class EP0214_ConvertirNumLetras {
         }
     }
 }
-

@@ -10,6 +10,7 @@ public static void main(String[] args) {
     //un número del tipo deseado.
 
     Scanner sc = new Scanner(System.in);
+            int n;
             System.out.println("Escribe un número");
             n = sc.nextInt();
             sc.close();
@@ -17,7 +18,6 @@ public static void main(String[] args) {
     if (comprobar)
      while (comprobar = true) {
         try {
-            int n ;
             System.out.println("Escribe un número");
             n = sc.nextInt();
             sc.close();
@@ -27,10 +27,6 @@ public static void main(String[] args) {
             System.out.println(e.toString());
          }
      } 
-
-    
+     
     }
 }
-
-
-
