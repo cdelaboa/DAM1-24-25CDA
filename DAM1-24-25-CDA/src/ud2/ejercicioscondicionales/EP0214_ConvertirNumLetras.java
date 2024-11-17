@@ -19,7 +19,9 @@ public class EP0214_ConvertirNumLetras {
     }
 
         public static String convertir(int numero) {
+            
         Scanner scanner = new Scanner(System.in);
+        
             
         if (numero == 0) {
             scanner.close();
@@ -152,7 +154,7 @@ public class EP0214_ConvertirNumLetras {
         } else if (numero < 100) {
             scanner.close();
             scanner.close();
-            return "ochenta y " + convertir(numero - 80);
+            return "noventa y " + convertir(numero - 90);
         } else {
             scanner.close();
 
@@ -160,4 +162,3 @@ public class EP0214_ConvertirNumLetras {
         }
     }
 }
-
