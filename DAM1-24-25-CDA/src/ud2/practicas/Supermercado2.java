@@ -41,7 +41,7 @@ public class Supermercado2 {
                 }
 
                 total += precio * cantidad;
-            } catch (Exception e) {
+            } catch (IllegalArgumentException e) {
                 System.out.println("Error: Entrada inválida. Por favor, intenta de nuevo.");
                 scanner.nextLine(); // Limpiar el buffer
             }
