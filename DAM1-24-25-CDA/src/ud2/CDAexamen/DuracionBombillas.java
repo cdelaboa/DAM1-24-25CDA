@@ -1,26 +1,23 @@
 package ud2.CDAexamen;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.Test;
+
 // CARLOS DE LA TORRE ABOAL
 public class DuracionBombillas {
-
-    public static void main(String[] args) {
-        causaFinBombilla(1000, -10, 10);
-    }
 
     public static String causaFinBombilla(int numHorasEncendido, int numEncendidos, int numHorasEstimacionEncendido) {
         String causaFinBombilla = "";
         if (numHorasEncendido > 0 && numEncendidos > 0 && numHorasEstimacionEncendido <= 10
                 && numHorasEstimacionEncendido > 0) {
-            if (numEncendidos * numHorasEstimacionEncendido > numHorasEncendido) {
-                System.out.println("HORAS");
-            } else if (numEncendidos * numHorasEstimacionEncendido < numHorasEncendido)
-                System.out.println("ENCENDIDOS");
+            if (numEncendidos * numHorasEstimacionEncendido > numHorasEncendido) 
+                causaFinBombilla = "HORAS";
+            else if (numEncendidos * numHorasEstimacionEncendido < numHorasEncendido)
+                causaFinBombilla = "ENCENDIDOS";
             else if (numEncendidos * numHorasEstimacionEncendido == numHorasEncendido)
-                System.out.println("ENCENDIDOS + HORAS");
+                causaFinBombilla = "ENCENDIDOS + HORAS";
         } else {
-            System.out.println("ERROR");
-
+            causaFinBombilla = "ERROR";
         }
         return causaFinBombilla;
 

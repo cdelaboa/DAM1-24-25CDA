@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "DAM1-24-25-CDA/lib/junit-platform-console-standalone-1.11.3.jar"
+    ]
+}
