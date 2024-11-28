@@ -3,7 +3,7 @@ package ud2.CDAexamen;
 //CARLOS DE LA TORRE ABOAL
 public class ChicleRegalo {
     public static void main(String[] args) {
-        System.out.println(totalChicles(20, 2, 5));
+        System.out.println(totalChicles(100, 10, 1));
     }
 
     public static int totalChicles(int numChiclesComprados, int numEnvoltoriosADevolver, int numChiclesGratis) {
