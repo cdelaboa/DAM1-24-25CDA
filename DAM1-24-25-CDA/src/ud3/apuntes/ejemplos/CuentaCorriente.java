@@ -11,8 +11,10 @@ si existe saldo suficiente.
 public class CuentaCorriente {
     // DATOS
     String dni;
-    String nombre;
-    double saldo = 0;
+    public String titular;
+    private double saldo = 0;
+    private Gestor gestor;
+    private static String banco;
 
     // CONSTRUCTORES
 
@@ -22,18 +24,25 @@ public class CuentaCorriente {
 
     public CuentaCorriente(String dni, String nombre, double saldo) {
         this.dni = dni;
-        this.nombre = nombre; 
+        this.titular = nombre;
         this.saldo = saldo < 0 ? 0 : saldo;
     }
 
-    CuentaCorriente(String nombre, String dni) {
+    public CuentaCorriente(String nombre, String dni) {
         this(dni, nombre, 0);
     }
 
-    CuentaCorriente(String dni, double saldo) {
-        this(dni,null, saldo);
+    public CuentaCorriente(String dni, double saldo) {
+        this(dni, null, saldo);
     }
 
+    public static String getBanco() {
+        return banco;
+    }
+
+    public static void setBanco(String banco) {
+        CuentaCorriente.banco = banco;
+    }
 
     public boolean sacarDinero(double importe) {
         if (saldo >= importe) {
@@ -50,7 +59,22 @@ public class CuentaCorriente {
 
     public void mostrarInformacion() {
         System.out.println("CUENTA CORRIENTE:");
-        System.out.println("- Titular: " + nombre + " (DNI= " + dni + ")");
+        System.out.println("- Titular: " + titular + " (DNI= " + dni + ")");
         System.out.println("- Saldo: " + saldo);
+    }
+
+    public static void main(String[] args) {
+        CuentaCorriente cc = new CuentaCorriente("55555555", "Carlos", 200);
+        CuentaCorriente cc2 = new CuentaCorriente("3333333", "David", 100);
+
+        CuentaCorriente.setBanco("Abanca");
+
+        cc.mostrarInformacion();
+        cc2.mostrarInformacion();
+        Gestor gestor = new Gestor("aaaaaa", "bbbbbb");
+        cc.gestor = gestor;
+        System.out.println(cc.gestor.nombreGestor + "(" + cc.gestor.telefono + ")");
+
+
     }
 }
