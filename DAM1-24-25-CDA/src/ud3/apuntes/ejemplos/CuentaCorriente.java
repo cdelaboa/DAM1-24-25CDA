@@ -71,10 +71,9 @@ public class CuentaCorriente {
 
         cc.mostrarInformacion();
         cc2.mostrarInformacion();
-        Gestor gestor = new Gestor("aaaaaa", "bbbbbb");
+        Gestor gestor = new Gestor("TELÉFONO = 555555555", "GESTOR CARLOS");
         cc.gestor = gestor;
         System.out.println(cc.gestor.nombreGestor + "(" + cc.gestor.telefono + ")");
-
-
+        
     }
 }
