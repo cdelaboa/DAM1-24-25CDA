@@ -1,8 +1,9 @@
-package ud3.apuntes.ejerciciosclases;
+package ud3.ejerciciosclases;
 
 public class Punto {
     private double x = 1.5;
     private double y = 2.6;
+    
     //CONSTRUCTOR
 
     Punto (double x, double y) {
@@ -24,10 +25,9 @@ public class Punto {
         y += dy;
     }
 
-    public double distanciaEuclidea (Punto otro) {
-        double distanciaEuclidea = 0;
-        return distanciaEuclidea;
-    }
+   /*  public double distanciaEuclidea (Punto otro) {
+    
+    } */
 
     public void muestra () {
         System.out.println("(" + x + ", " + y + ")");

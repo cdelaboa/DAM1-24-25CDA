@@ -10,9 +10,7 @@ public class EcuacionSegundoGrado {
     }
 
     public EcuacionSegundoGrado (double a, double b, double c) {
-        a = 1;
-        b = 2;
-        c = 1;
+        
     }
 
     //MÉTODO
