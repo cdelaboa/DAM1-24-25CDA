@@ -1,21 +1,63 @@
 package ud3.ejerciciosclases;
 
 public class Calendario {
-//DATOS
+    // DATOS
 
-int año, mes, dia;
+    public int anho = 2024, mes = 12, dia = 31;
 
-//CONSTRUCTOR
+    // CONSTRUCTOR
 
-Calendario (int año, int mes, int dia) {
-    if (año > 0 && mes > 0 && mes < 12 && dia > 0 && dia < 32); 
+    Calendario(int año, int mes, int dia) {
+        if (anho > 0 && mes > 0 && mes < 12 && dia > 0 && dia < 32)
+        dia = dia;
+        mes = mes;
+        anho = anho;
+    }
+
+    // MÉTODOS
+
+    public void incrementarDia() {
+        if (dia == 31) {
+            dia = 1;
+            if (mes ==12) {
+                mes = 1;
+                anho++;
+            }else 
+                mes++;
+        } else
+            dia++;
+    }
+
+    public void incrementarMes() {
+        if (mes == 12) {
+            mes = 1;
+            anho++;
+        } else
+            mes++;
+    }
+
+    public void incrementarAño(int cantidad) {
+
+        if (cantidad == 0) return; // Si la cantidad es 0, no hacemos nada
+        
+        int nuevoAnho = anho + cantidad;
+
+        anho = nuevoAnho;
+    }
+
+
+    public void mostrar() {
+        System.out.println("DÍA: " + dia);
+        System.out.println("MES: " + mes);
+        System.out.println("AÑO: " + anho);
+    }
+    public static void main(String[] args) {
+        Calendario fecha1 = new Calendario(0, 0, 0);
+
+        fecha1.mostrar();
+        fecha1.incrementarDia();
+        fecha1.mostrar();
+        fecha1.incrementarAño(4);
+        fecha1.mostrar();
+    }
 }
-
-//MÉTODOS
-
-public void incrementarDia() {
-    
-}
-
-
-} 
