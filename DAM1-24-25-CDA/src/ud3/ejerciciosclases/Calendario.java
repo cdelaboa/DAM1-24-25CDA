@@ -9,9 +9,9 @@ public class Calendario {
 
     Calendario(int año, int mes, int dia) {
         if (anho > 0 && mes > 0 && mes < 12 && dia > 0 && dia < 32)
-        dia = dia;
-        mes = mes;
-        anho = anho;
+        this.dia = dia;
+        this.mes = mes;
+        this.anho = anho;
     }
 
     // MÉTODOS
@@ -52,7 +52,7 @@ public class Calendario {
         System.out.println("AÑO: " + anho);
     }
     public static void main(String[] args) {
-        Calendario fecha1 = new Calendario(0, 0, 0);
+        Calendario fecha1 = new Calendario(2024, 12, 31);
 
         fecha1.mostrar();
         fecha1.incrementarDia();
